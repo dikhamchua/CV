@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h3>Contact Details</h3>
+    <p>Address 1: Ha Long, Quang Ninh</p>
+    <p>Address 2: Thach Hoa, Thach That, Ha Noi</p>
+    <p>Phone : 0975720884</p>
+    <p>Email : vinhpham2761@gmail.com</p>
+
+    <a href="index.html">Back</a>
+
+    <!-- FORM INPUT -->
+    <form
+      action="mailto:vinhpkhe153482@fpt.edu.vn"
+      method="post"
+      enctype="text/plain"
+    >
+      <table cellspacing="10">
+        <!-- Enter name -->
+        <tr>
+          <td>
+            <label for="contactName">Contact Name</label>
+          </td>
+          <td>
+            <input type="text" id="contactName" name="yourName" />
+          </td>
+        </tr>
+        <!-- Enter email -->
+        <tr>
+          <td>
+            <label for="contactEmail">Contact email</label>
+          </td>
+          <td>
+            <input type="email" id="contactEmail" name="yourEmail" />
+          </td>
+        </tr>
+        <!-- Enter gender -->
+        <tr>
+          <td>
+            <label for="contactGender">Enter gender</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              id="contactMale"
+              name="gender"
+              value="male"
+              name="yourGender"
+            />
+            <label for="contactMale">Male</label>
+            <input
+              type="radio"
+              id="contactFemale"
+              name="gender"
+              value="female"
+            />
+            <label for="contactFemale">Female</label>
+          </td>
+        </tr>
+        <!-- Enter Date -->
+        <tr>
+          <td>
+            <label for="contactDate">Enter DATE</label>
+          </td>
+          <td>
+            <input type="date" id="contactDate" name="yourDate" />
+          </td>
+        </tr>
+        <!-- Enter country -->
+        <tr>
+          <td>
+            <label for="countrySelect">Choose a country: </label>
+          </td>
+
+          <td>
+            <select name="country" id="countrySelect" name="yourCountry">
+              <option value="">Please choose an option</option>
+              <option value="vietNam">Viet Nam</option>
+              <option value="campuchia">Campuchia</option>
+              <option value="thaiLan">Thai Lan</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="contactMessage">Your Message</label>
+          </td>
+          <td>
+            <textarea
+              name="yourMessage"
+              id="contactMessage"
+              cols="10"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" name="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
